@@ -7,7 +7,6 @@
 
 import Foundation
 
-protocol GetProduct {
-    func getProductById(_ id: UUID) -> Product
-    func getCategoryByProductId(_ id: UUID) -> Category
+protocol GetProductById {
+    func execute(_ id: UUID) -> Product
 }

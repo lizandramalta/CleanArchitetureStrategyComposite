@@ -6,5 +6,5 @@
 //
 
 protocol FetchAllProductsAndCategories {
-    func loadAll() -> [Element]
+    func execute() -> [Element]
 }
