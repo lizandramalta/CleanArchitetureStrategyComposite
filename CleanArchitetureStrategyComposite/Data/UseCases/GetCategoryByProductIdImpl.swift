@@ -8,8 +8,14 @@
 import Foundation
 
 class GetCategoryByProductIdImpl: GetCategoryByProductId {
+    private let repository: ProductRepository
+    
+    init(repository: ProductRepository) {
+        self.repository = repository
+    }
+    
 	func execute(_ id: UUID) -> Category {
-		//
+        return repository.getCategoryByProductId(id)
 	}
 
 }

@@ -7,8 +7,14 @@
 import Foundation
 
 class GetProductByIdImpl: GetProductById {
+    private let repository: ProductRepository
+    
+    init(repository: ProductRepository) {
+        self.repository = repository
+    }
+    
 	func execute(_ id: UUID) -> Product {
-		//
+        return repository.getProductById(id)
 	}
 	
 }

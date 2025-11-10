@@ -6,8 +6,15 @@
 //
 
 class FetchAllProductsAndCategoriesImpl: FetchAllProductsAndCategories {
+    private let repository: CategoryRepository
+    
+    init(repository: CategoryRepository) {
+        self.repository = repository
+    }
+    
+    
 	func execute() -> [any Element] {
-		//
+        return repository.loadAll()
 	}
 	
 }
