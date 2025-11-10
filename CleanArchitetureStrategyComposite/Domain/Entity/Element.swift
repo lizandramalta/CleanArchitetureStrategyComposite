@@ -14,6 +14,8 @@ protocol Element: AnyObject {
     var children: [any Element] { get set }
     
     func addChildren(_ element: Element) -> Void
+    func execute() -> Void
+    
 }
 
 extension Element {

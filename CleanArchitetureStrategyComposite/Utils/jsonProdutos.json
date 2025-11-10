@@ -1,0 +1,116 @@
+{
+  "id": "UUID",
+  "name": "Loja",
+  "children": [
+    {
+      "id": "UUID",
+      "name": "Eletrônicos",
+      "children": [
+        {
+          "id": "UUID",
+          "name": "Celulares",
+          "children": [
+            { "id": "UUID", "name": "iPhone 14 Pro", "price": 7999.0 },
+            { "id": "UUID", "name": "iPhone 13", "price": 5999.0 },
+            { "id": "UUID", "name": "Samsung S23", "price": 4999.0 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "name": "Notebooks",
+          "children": [
+            { "id": "UUID", "name": "MacBook Air M2", "price": 8999.0 },
+            { "id": "UUID", "name": "Dell XPS 13", "price": 7499.0 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "name": "Acessórios",
+          "children": [
+            { "id": "UUID", "name": "AirPods Pro", "price": 1999.0 },
+            { "id": "UUID", "name": "Carregador MagSafe", "price": 349.0 },
+            { "id": "UUID", "name": "Mouse Logitech MX Master 3", "price": 499.0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "UUID",
+      "name": "Casa e Cozinha",
+      "children": [
+        {
+          "id": "UUID",
+          "name": "Eletroportáteis",
+          "children": [
+            { "id": "UUID", "name": "Air Fryer Philips", "price": 499.0 },
+            { "id": "UUID", "name": "Liquidificador Oster", "price": 299.0 },
+            { "id": "UUID", "name": "Cafeteira Nespresso", "price": 699.0 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "name": "Decoração",
+          "children": [
+            { "id": "UUID", "name": "Luminária LED Minimalista", "price": 159.0 },
+            { "id": "UUID", "name": "Vela Aromática Bamboo", "price": 49.0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "UUID",
+      "name": "Moda",
+      "children": [
+        {
+          "id": "UUID",
+          "name": "Roupas",
+          "children": [
+            { "id": "UUID", "name": "Camiseta Oversized", "price": 79.9 },
+            { "id": "UUID", "name": "Jaqueta Bomber Preta", "price": 249.9 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "name": "Acessórios",
+          "children": [
+            { "id": "UUID", "name": "Boné Preto Minimalista", "price": 59.9 },
+            { "id": "UUID", "name": "Relógio Casio Vintage", "price": 199.9 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "name": "Calçados",
+          "children": [
+            { "id": "UUID", "name": "Tênis Nike Air Max", "price": 599.0 },
+            { "id": "UUID", "name": "Chinelo Havaianas Preto", "price": 39.9 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "UUID",
+      "name": "Esportes",
+      "children": [
+        {
+          "id": "UUID",
+          "name": "Fitness",
+          "children": [
+            { "id": "UUID", "name": "Tapete de Yoga Premium", "price": 199.0 },
+            { "id": "UUID", "name": "Corda de Pular Speed", "price": 49.9 },
+            { "id": "UUID", "name": "Halter 5kg (Par)", "price": 129.9 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "name": "Pilates",
+          "children": [
+            { "id": "UUID", "name": "Bola de Pilates 65cm", "price": 119.9 }
+          ]
+        }
+      ]
+    }
+  ]
+}
