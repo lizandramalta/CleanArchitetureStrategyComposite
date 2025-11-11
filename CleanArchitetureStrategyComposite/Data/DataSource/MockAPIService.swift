@@ -7,7 +7,7 @@
 
 import Foundation
 
-func loadMockData() -> [Categoria]? {
+func loadMockData() -> [Category]? {
     guard let url = Bundle.main.url(forResource: "jsonProdutos", withExtension: "json"),
     let data = try? Data(contentsOf: url) else {
         return nil
@@ -16,7 +16,7 @@ func loadMockData() -> [Categoria]? {
     let decoder = JSONDecoder()
 
     print("Vai decodar")
-    let decodedData: [Categoria] = try! decoder.decode([Categoria].self, from: data)
+    let decodedData: [Category] = try! decoder.decode([Category].self, from: data)
     print("Decodou com sucesso")
     return decodedData
 }

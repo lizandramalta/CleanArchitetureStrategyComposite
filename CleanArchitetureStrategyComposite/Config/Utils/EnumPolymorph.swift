@@ -7,9 +7,16 @@
 
 import Foundation
 
-enum ElementNode: Codable, Element {
-    case product(Produto)
-    case category(Categoria)
+enum ElementNode: Decodable, Element {
+    func executeSearch(name: String) -> (any Element)? {
+        switch self {
+        case .product(let p): p.executeSearch(name: name)
+        case .category(let c): c.executeSearch(name: name)
+        }
+    }
+    
+    case product(Product)
+    case category(Category)
     
     var id: UUID {
         switch self {
@@ -45,19 +52,12 @@ enum ElementNode: Codable, Element {
 
         switch type {
         case "produto":
-            self = .product(try Produto(from: decoder))
+            self = .product(try Product(from: decoder))
         case "categoria":
-            self = .category(try Categoria(from: decoder))
+            self = .category(try Category(from: decoder))
         default:
             throw DecodingError.dataCorruptedError(forKey: .type,
                 in: container, debugDescription: "Tipo desconhecido: \(type)")
-        }
-    }
-
-    func encode(to encoder: Encoder) throws {
-        switch self {
-        case .product(let p): try p.encode(to: encoder)
-        case .category(let c): try c.encode(to: encoder)
         }
     }
 

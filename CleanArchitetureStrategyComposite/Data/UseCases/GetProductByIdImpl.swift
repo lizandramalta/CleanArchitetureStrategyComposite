@@ -6,15 +6,15 @@
 //
 import Foundation
 
-class GetProductByIdImpl: GetProductById {
+class GetProductByNameImpl: GetProductByName {
     private let repository: ProductRepository
     
     init(repository: ProductRepository) {
         self.repository = repository
     }
     
-	func execute(_ id: UUID) -> Product {
-        return repository.getProductById(id)
+	func execute(_ name: String) -> Product {
+        return repository.getProductByName(name)
 	}
 	
 }

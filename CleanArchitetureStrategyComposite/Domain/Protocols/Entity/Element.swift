@@ -12,6 +12,7 @@ protocol Element {
     var name: String { get }
 	var type: String { get }
     
-    func execute() -> Void
+    func execute()
     
+    func executeSearch(name: String) -> Element?
 }

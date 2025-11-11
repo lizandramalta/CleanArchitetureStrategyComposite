@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Categoria: Identifiable, Codable, Element {
+struct Category: Identifiable, Decodable, Element {
     var id: UUID
     var name: String
     var type: String
@@ -23,5 +23,19 @@ class Categoria: Identifiable, Codable, Element {
         for product in self.children {
             product.execute()
         }
+    }
+    
+    func executeSearch(name: String) -> Element? {
+        for product in self.children {
+            if name == product.name {
+                return product
+            }
+           return product.executeSearch(name: name)
+        }
+        return nil
+    }
+    
+    func getId() -> UUID {
+        return self.id
     }
 }

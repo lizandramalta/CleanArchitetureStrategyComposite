@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Produto: Identifiable, Codable, Element{
+struct Product: Identifiable, Decodable, Element{
     var id: UUID
     var name: String
     var type: String
@@ -20,5 +20,9 @@ class Produto: Identifiable, Codable, Element{
     
     func execute() {
         print("Está executando o produto: \(self.name)")
+    }
+    
+    func executeSearch(name: String) -> Element? {
+        return nil
     }
 }

@@ -1,0 +1,134 @@
+{
+  "id": "UUID",
+  "type": "categoria",
+  "name": "Loja",
+  "children": [
+    {
+      "id": "UUID",
+      "type": "categoria",
+      "name": "Eletrônicos",
+      "children": [
+        { "id": "UUID", "type": "produto", "name": "Smart TV 55\" 4K", "price": 3299.0 },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Celulares",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "iPhone 14 Pro", "price": 7999.0 },
+            { "id": "UUID", "type": "produto", "name": "iPhone 13", "price": 5999.0 },
+            { "id": "UUID", "type": "produto", "name": "Samsung S23", "price": 4999.0 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Notebooks",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "MacBook Air M2", "price": 8999.0 },
+            { "id": "UUID", "type": "produto", "name": "Dell XPS 13", "price": 7499.0 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Acessórios",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "AirPods Pro", "price": 1999.0 },
+            { "id": "UUID", "type": "produto", "name": "Carregador MagSafe", "price": 349.0 },
+            { "id": "UUID", "type": "produto", "name": "Mouse Logitech MX Master 3", "price": 499.0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "UUID",
+      "type": "categoria",
+      "name": "Casa e Cozinha",
+      "children": [
+        { "id": "UUID", "type": "produto", "name": "Conjunto de Facas Inox", "price": 229.0 },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Eletroportáteis",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Air Fryer Philips", "price": 499.0 },
+            { "id": "UUID", "type": "produto", "name": "Liquidificador Oster", "price": 299.0 },
+            { "id": "UUID", "type": "produto", "name": "Cafeteira Nespresso", "price": 699.0 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Decoração",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Luminária LED Minimalista", "price": 159.0 },
+            { "id": "UUID", "type": "produto", "name": "Vela Aromática Bamboo", "price": 49.0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "UUID",
+      "type": "categoria",
+      "name": "Moda",
+      "children": [
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Roupas",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Camiseta Oversized", "price": 79.9 },
+            { "id": "UUID", "type": "produto", "name": "Jaqueta Bomber Preta", "price": 249.9 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Acessórios",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Boné Preto Minimalista", "price": 59.9 },
+            { "id": "UUID", "type": "produto", "name": "Relógio Casio Vintage", "price": 199.9 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Calçados",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Tênis Nike Air Max", "price": 599.0 },
+            { "id": "UUID", "type": "produto", "name": "Chinelo Havaianas Preto", "price": 39.9 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "UUID",
+      "type": "categoria",
+      "name": "Esportes",
+      "children": [
+        { "id": "UUID", "type": "produto", "name": "Squeeze Térmico 750ml", "price": 89.9 },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Fitness",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Tapete de Yoga Premium", "price": 199.0 },
+            { "id": "UUID", "type": "produto", "name": "Corda de Pular Speed", "price": 49.9 },
+            { "id": "UUID", "type": "produto", "name": "Halter 5kg (Par)", "price": 129.9 }
+          ]
+        },
+        {
+          "id": "UUID",
+          "type": "categoria",
+          "name": "Pilates",
+          "children": [
+            { "id": "UUID", "type": "produto", "name": "Bola de Pilates 65cm", "price": 119.9 }
+          ]
+        }
+      ]
+    }
+  ]
+}
