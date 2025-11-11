@@ -8,22 +8,8 @@
 import Foundation
 
 enum ElementNode: Decodable, Element {
-    func executeSearch(name: String) -> (any Element)? {
-        switch self {
-        case .product(let p): p.executeSearch(name: name)
-        case .category(let c): c.executeSearch(name: name)
-        }
-    }
-    
     case product(Product)
     case category(Category)
-    
-    var id: UUID {
-        switch self {
-        case .product(let p): return p.id
-        case .category(let c): return c.id
-        }
-    }
 
     var name: String {
         switch self {
@@ -41,8 +27,15 @@ enum ElementNode: Decodable, Element {
     
     func execute() {
         switch self {
-        case .product(let p): p.execute()
-        case .category(let c): c.execute()
+        case .product(let p): return p.execute()
+        case .category(let c): return c.execute()
+        }
+    }
+    
+    func executeSearch(name: String) -> (any Element)? {
+        switch self {
+        case .product(let p): return p.executeSearch(name: name)
+        case .category(let c): return c.executeSearch(name: name)
         }
     }
 

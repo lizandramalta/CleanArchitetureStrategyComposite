@@ -1,0 +1,122 @@
+{
+  "type": "categoria",
+  "name": "Loja",
+  "children": [
+    {
+      "type": "categoria",
+      "name": "Eletrônicos",
+      "children": [
+        {
+          "type": "produto",
+          "name": "Smart TV 55\" 4K"
+        },
+        {
+          "type": "categoria",
+          "name": "Celulares",
+          "children": [
+            { "type": "produto", "name": "iPhone 14 Pro" },
+            { "type": "produto", "name": "iPhone 13" },
+            { "type": "produto", "name": "Samsung S23" }
+          ]
+        },
+        {
+          "type": "categoria",
+          "name": "Notebooks",
+          "children": [
+            { "type": "produto", "name": "MacBook Air M2" },
+            { "type": "produto", "name": "Dell XPS 13" }
+          ]
+        },
+        {
+          "type": "categoria",
+          "name": "Acessórios",
+          "children": [
+            { "type": "produto", "name": "AirPods Pro" },
+            { "type": "produto", "name": "Carregador MagSafe" },
+            { "type": "produto", "name": "Mouse Logitech MX Master 3" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "categoria",
+      "name": "Casa e Cozinha",
+      "children": [
+        { "type": "produto", "name": "Conjunto de Facas Inox" },
+        {
+          "type": "categoria",
+          "name": "Eletroportáteis",
+          "children": [
+            { "type": "produto", "name": "Air Fryer Philips" },
+            { "type": "produto", "name": "Liquidificador Oster" },
+            { "type": "produto", "name": "Cafeteira Nespresso" }
+          ]
+        },
+        {
+          "type": "categoria",
+          "name": "Decoração",
+          "children": [
+            { "type": "produto", "name": "Luminária LED Minimalista" },
+            { "type": "produto", "name": "Vela Aromática Bamboo" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "categoria",
+      "name": "Moda",
+      "children": [
+        {
+          "type": "categoria",
+          "name": "Roupas",
+          "children": [
+            { "type": "produto", "name": "Camiseta Oversized" },
+            { "type": "produto", "name": "Jaqueta Bomber Preta" }
+          ]
+        },
+        {
+          "type": "categoria",
+          "name": "Acessórios",
+          "children": [
+            { "type": "produto", "name": "Boné Preto Minimalista" },
+            { "type": "produto", "name": "Relógio Casio Vintage" }
+          ]
+        },
+        {
+          "type": "categoria",
+          "name": "Calçados",
+          "children": [
+            { "type": "produto", "name": "Tênis Nike Air Max" },
+            { "type": "produto", "name": "Chinelo Havaianas Preto" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "categoria",
+      "name": "Esportes",
+      "children": [
+        { "type": "produto", "name": "Squeeze Térmico 750ml" },
+        {
+          "type": "categoria",
+          "name": "Fitness",
+          "children": [
+            { "type": "produto", "name": "Tapete de Yoga Premium" },
+            { "type": "produto", "name": "Corda de Pular Speed" },
+            { "type": "produto", "name": "Halter 5kg (Par)" }
+          ]
+        },
+        {
+          "type": "categoria",
+          "name": "Pilates",
+          "children": [
+            { "type": "produto", "name": "Bola de Pilates 65cm" }
+          ]
+        }
+      ]
+    }
+  ]
+}

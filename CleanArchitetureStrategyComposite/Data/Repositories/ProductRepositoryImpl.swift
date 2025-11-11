@@ -9,21 +9,13 @@ import Playgrounds
 
 struct ProductRepositoryImpl: ProductRepository {
 	func getProductByName(_ name: String) -> Product {
-        return Product(id: UUID(), name: " ", type: " ")
+        return Product(id: UUID() , name: " ", type: " ")
 	}
 	
 	func getCategoryByProductName(_ name: String) -> Category {
-        guard let dados = loadMockData() else  { return Category(id: UUID(), name: " ", type: " ")}
-        for dado in dados {
-            print(dado.executeSearch(name: name) ?? "")
-        }
-        return Category(id: UUID(), name: " ", type: " ")
+        return Category(id: UUID() , name: " ", type: " ")
 	}
 	
 	
 }
 
-#Playground {
-    var repository = ProductRepositoryImpl()
-    print(repository.getCategoryByProductName("iPhone 14 Pro"))
-}

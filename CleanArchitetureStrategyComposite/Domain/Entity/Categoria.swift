@@ -7,17 +7,11 @@
 
 import Foundation
 
-struct Category: Identifiable, Decodable, Element {
-    var id: UUID
+struct Category: Decodable, Element {
+    var id = UUID()
     var name: String
     var type: String
     var children: [ElementNode] = []
-    
-    init(id: UUID, name: String, type: String) {
-        self.id = id
-        self.name = name
-        self.type = type
-    }
     
     func execute() {
         for product in self.children {
@@ -33,9 +27,5 @@ struct Category: Identifiable, Decodable, Element {
            return product.executeSearch(name: name)
         }
         return nil
-    }
-    
-    func getId() -> UUID {
-        return self.id
     }
 }

@@ -15,8 +15,13 @@ func loadMockData() -> [Category]? {
     
     let decoder = JSONDecoder()
 
-    print("Vai decodar")
-    let decodedData: [Category] = try! decoder.decode([Category].self, from: data)
-    print("Decodou com sucesso")
-    return decodedData
+    do {
+        print("Vai decodar")
+        let decodedData: Category = try decoder.decode(Category.self, from: data)
+        print("Decodou com sucesso")
+        return [decodedData]
+    } catch {
+        print("Erro: \(error)")
+        return nil
+    }
 }

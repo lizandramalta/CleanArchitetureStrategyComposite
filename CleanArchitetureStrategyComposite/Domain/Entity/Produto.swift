@@ -7,22 +7,16 @@
 
 import Foundation
 
-struct Product: Identifiable, Decodable, Element{
-    var id: UUID
+struct Product: Decodable, Element{
+    var id = UUID()
     var name: String
     var type: String
-    
-    init(id: UUID, name: String, type: String) {
-        self.id = id
-        self.name = name
-        self.type = type
-    }
     
     func execute() {
         print("Está executando o produto: \(self.name)")
     }
     
     func executeSearch(name: String) -> Element? {
-        return nil
+        return self
     }
 }

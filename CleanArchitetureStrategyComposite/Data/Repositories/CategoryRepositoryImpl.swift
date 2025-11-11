@@ -7,9 +7,6 @@
 
 struct CategoryRepositoryImpl: CategoryRepository {
 	func loadAll() -> [any Element] {
-		//
         return []
 	}
-	
-	
 }
