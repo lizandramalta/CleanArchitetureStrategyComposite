@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol GetProductById {
-    func execute(_ id: UUID) -> Product
+protocol GetProductByName {
+    func execute(_ name: String) -> Product
 }
