@@ -18,7 +18,6 @@ class Product: Element {
         self.name = name
         self.type = type
         self.price = price
-        self.children = []
     }
     
     internal func execute() {}
