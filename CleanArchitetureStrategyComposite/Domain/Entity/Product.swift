@@ -7,16 +7,18 @@
 
 import Foundation
 
-final class Product: Element {
+class Product: Element {
     var id: UUID
     var name: String
+    var type: String
     var price: Double
-    var children: [any Element]
     
-    init(id: UUID = .init(), name: String, price: Double) {
+    init(id: UUID = .init(), name: String, type: String, price: Double) {
         self.id = id
         self.name = name
+        self.type = type
         self.price = price
-        self.children = []
     }
+    
+    internal func execute() {}
 }
