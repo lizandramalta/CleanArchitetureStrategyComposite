@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Category: Element {
+class Category: Element {
     var id: UUID
     var name: String
     var type: String
@@ -19,4 +19,6 @@ final class Category: Element {
         self.type = type
         self.children = children
     }
+    
+    internal func execute() {}
 }

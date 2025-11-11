@@ -7,11 +7,11 @@
 
 import Foundation
 
-class Categoria: Identifiable, Element {
+class Categoria: Identifiable, Codable, Element {
     var id: UUID
     var name: String
     var type: String
-    var children: [any Element] = []
+    var children: [ElementNode] = []
     
     init(id: UUID, name: String, type: String) {
         self.id = id
