@@ -1,131 +1,131 @@
 {
-  "id": "UUID",
+  "id": "bb196f64-bb90-4127-ad88-9c21d76f3fab",
   "type": "categoria",
   "name": "Loja",
   "children": [
     {
-      "id": "UUID",
+      "id": "ecc96c51-5b14-41d4-b2d1-e3161164867d",
       "type": "categoria",
       "name": "Eletrônicos",
       "children": [
-        { "id": "UUID", "type": "produto", "name": "Smart TV 55\" 4K", "price": 3299.0 },
+        { "id": "26de4288-a19f-40c6-991c-d452c9779a84", "type": "produto", "name": "Smart TV 55\" 4K", "price": 3299.0 },
         {
-          "id": "UUID",
+          "id": "5fad6062-6a03-4977-9e6a-a62b384a9eb4",
           "type": "categoria",
           "name": "Celulares",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "iPhone 14 Pro", "price": 7999.0 },
-            { "id": "UUID", "type": "produto", "name": "iPhone 13", "price": 5999.0 },
-            { "id": "UUID", "type": "produto", "name": "Samsung S23", "price": 4999.0 }
+            { "id": "5f5b0513-f224-4aa2-9dbc-e8a7dc662867", "type": "produto", "name": "iPhone 14 Pro", "price": 7999.0 },
+            { "id": "e0a273e8-7c35-495b-9950-c9cffa6bb536", "type": "produto", "name": "iPhone 13", "price": 5999.0 },
+            { "id": "50775e5b-f063-4d49-af7c-d547cab83bc3", "type": "produto", "name": "Samsung S23", "price": 4999.0 }
           ]
         },
         {
-          "id": "UUID",
+          "id": "627054f9-10bc-447f-a71b-c9b4087bbd8e",
           "type": "categoria",
           "name": "Notebooks",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "MacBook Air M2", "price": 8999.0 },
-            { "id": "UUID", "type": "produto", "name": "Dell XPS 13", "price": 7499.0 }
+            { "id": "aabab3fd-794d-4a7b-b94c-f18504771daf", "type": "produto", "name": "MacBook Air M2", "price": 8999.0 },
+            { "id": "f78d6b44-79b3-40f7-9502-62639667464b", "type": "produto", "name": "Dell XPS 13", "price": 7499.0 }
           ]
         },
         {
-          "id": "UUID",
+          "id": "6cbbbd79-7478-4eb9-97ae-90977f130a5d",
           "type": "categoria",
           "name": "Acessórios",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "AirPods Pro", "price": 1999.0 },
-            { "id": "UUID", "type": "produto", "name": "Carregador MagSafe", "price": 349.0 },
-            { "id": "UUID", "type": "produto", "name": "Mouse Logitech MX Master 3", "price": 499.0 }
+            { "id": "f346a4bc-8bd9-4257-910d-7b70d54cf37f", "type": "produto", "name": "AirPods Pro", "price": 1999.0 },
+            { "id": "c0770a51-67af-4471-85e0-43e3ff2259b4", "type": "produto", "name": "Carregador MagSafe", "price": 349.0 },
+            { "id": "854c5559-27ac-4ec1-81a9-b4aa9c16d2a8", "type": "produto", "name": "Mouse Logitech MX Master 3", "price": 499.0 }
           ]
         }
       ]
     },
 
     {
-      "id": "UUID",
+      "id": "eea7403a-2d84-4612-99f4-7033afc6fa55",
       "type": "categoria",
       "name": "Casa e Cozinha",
       "children": [
-        { "id": "UUID", "type": "produto", "name": "Conjunto de Facas Inox", "price": 229.0 },
+        { "id": "9c3af513-2a37-4179-8cfb-96fc20c686e8", "type": "produto", "name": "Conjunto de Facas Inox", "price": 229.0 },
         {
-          "id": "UUID",
+          "id": "5c2299a0-7ceb-4050-bcb2-90a20ae67f97",
           "type": "categoria",
           "name": "Eletroportáteis",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Air Fryer Philips", "price": 499.0 },
-            { "id": "UUID", "type": "produto", "name": "Liquidificador Oster", "price": 299.0 },
-            { "id": "UUID", "type": "produto", "name": "Cafeteira Nespresso", "price": 699.0 }
+            { "id": "b5e4a9b6-6bad-4100-91b9-32bd0fab7124", "type": "produto", "name": "Air Fryer Philips", "price": 499.0 },
+            { "id": "9f5d57d0-f330-411d-9f5d-6309f81dcd9a", "type": "produto", "name": "Liquidificador Oster", "price": 299.0 },
+            { "id": "43a9e674-e329-4db4-b555-436401113ebb", "type": "produto", "name": "Cafeteira Nespresso", "price": 699.0 }
           ]
         },
         {
-          "id": "UUID",
+          "id": "e384222a-6c42-48ba-aa73-932246dff2de",
           "type": "categoria",
           "name": "Decoração",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Luminária LED Minimalista", "price": 159.0 },
-            { "id": "UUID", "type": "produto", "name": "Vela Aromática Bamboo", "price": 49.0 }
+            { "id": "2da65780-9e31-4173-bda9-1ae56c71a354", "type": "produto", "name": "Luminária LED Minimalista", "price": 159.0 },
+            { "id": "3e04a0c6-e0b3-4a98-974a-82d896956570", "type": "produto", "name": "Vela Aromática Bamboo", "price": 49.0 }
           ]
         }
       ]
     },
 
     {
-      "id": "UUID",
+      "id": "a930bdb0-041a-4f2d-9b8b-f8ee05d4a2fb",
       "type": "categoria",
       "name": "Moda",
       "children": [
         {
-          "id": "UUID",
+          "id": "2af4b1b9-f53e-4f4d-83ff-1cf8636febf3",
           "type": "categoria",
           "name": "Roupas",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Camiseta Oversized", "price": 79.9 },
-            { "id": "UUID", "type": "produto", "name": "Jaqueta Bomber Preta", "price": 249.9 }
+            { "id": "5ece9633-dc74-4772-b46b-ac91e84770e2", "type": "produto", "name": "Camiseta Oversized", "price": 79.9 },
+            { "id": "35c7ad4e-b536-4c5f-89e3-4b1d74ddee77", "type": "produto", "name": "Jaqueta Bomber Preta", "price": 249.9 }
           ]
         },
         {
-          "id": "UUID",
+          "id": "95a0c010-e348-46d1-b1ef-221de57f8175",
           "type": "categoria",
           "name": "Acessórios",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Boné Preto Minimalista", "price": 59.9 },
-            { "id": "UUID", "type": "produto", "name": "Relógio Casio Vintage", "price": 199.9 }
+            { "id": "d62e46fc-05bc-4ed6-b06c-2abca00ac377", "type": "produto", "name": "Boné Preto Minimalista", "price": 59.9 },
+            { "id": "c0f5b355-2b67-4d9d-9a42-ce3cd6b68775", "type": "produto", "name": "Relógio Casio Vintage", "price": 199.9 }
           ]
         },
         {
-          "id": "UUID",
+          "id": "9d4c11b6-6700-4da5-ba46-3a745a371257",
           "type": "categoria",
           "name": "Calçados",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Tênis Nike Air Max", "price": 599.0 },
-            { "id": "UUID", "type": "produto", "name": "Chinelo Havaianas Preto", "price": 39.9 }
+            { "id": "ec31377a-cd7d-4eec-999a-cc849a59fedc", "type": "produto", "name": "Tênis Nike Air Max", "price": 599.0 },
+            { "id": "dbf8d61d-ed20-48e9-9e21-20fed0eb4ed0", "type": "produto", "name": "Chinelo Havaianas Preto", "price": 39.9 }
           ]
         }
       ]
     },
 
     {
-      "id": "UUID",
+      "id": "68d75b1f-16b9-4bd9-8169-1f6e6a0e83a3",
       "type": "categoria",
       "name": "Esportes",
       "children": [
-        { "id": "UUID", "type": "produto", "name": "Squeeze Térmico 750ml", "price": 89.9 },
+        { "id": "280d76a0-8ed8-4e3f-8c9c-76077ffd470c", "type": "produto", "name": "Squeeze Térmico 750ml", "price": 89.9 },
         {
-          "id": "UUID",
+          "id": "bfe456ae-078b-43a6-97cf-78c96c6e72cd",
           "type": "categoria",
           "name": "Fitness",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Tapete de Yoga Premium", "price": 199.0 },
-            { "id": "UUID", "type": "produto", "name": "Corda de Pular Speed", "price": 49.9 },
-            { "id": "UUID", "type": "produto", "name": "Halter 5kg (Par)", "price": 129.9 }
+            { "id": "18836a75-31c5-4a56-8d44-386b0e947f67", "type": "produto", "name": "Tapete de Yoga Premium", "price": 199.0 },
+            { "id": "48fc45e1-be82-43a5-8f9a-6c3b20d0fa0c", "type": "produto", "name": "Corda de Pular Speed", "price": 49.9 },
+            { "id": "49e6a471-74c6-4005-a9bc-759701cdd416", "type": "produto", "name": "Halter 5kg (Par)", "price": 129.9 }
           ]
         },
         {
-          "id": "UUID",
+          "id": "17abccc8-1eff-4d05-8316-65b585e3c15f",
           "type": "categoria",
           "name": "Pilates",
           "children": [
-            { "id": "UUID", "type": "produto", "name": "Bola de Pilates 65cm", "price": 119.9 }
+            { "id": "91b39b64-4a65-4b89-a1e9-48594d2ac19a", "type": "produto", "name": "Bola de Pilates 65cm", "price": 119.9 }
           ]
         }
       ]
