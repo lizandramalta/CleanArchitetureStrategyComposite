@@ -11,7 +11,9 @@ import SwiftUI
 struct CleanArchitetureStrategyCompositeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                CategoryListView(categoria: loja)
+            }
         }
     }
 }
