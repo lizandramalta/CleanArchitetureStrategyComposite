@@ -10,10 +10,15 @@ import Foundation
 final class Category: Element {
     var id: UUID
     var name: String
-    var children: [any Element]
+    var elements: [any Element]
     
-    init(id: UUID = .init(), name: String, children: [any Element]) {
+    init(id: UUID = .init(), name: String, elements: [any Element]) {
         self.id = id
         self.name = name
-        self.children = children
-    }}
+        self.elements = elements
+    }
+    
+    func addElement(_ element: any Element) {
+        elements.append(element)
+    }
+}
