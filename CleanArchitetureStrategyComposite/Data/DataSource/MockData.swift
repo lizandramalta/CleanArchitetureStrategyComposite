@@ -5,6 +5,8 @@
 //  Created by Cauê Carneiro on 12/11/25.
 //
 
+
+//BoraBora
 import Foundation
 
 let loja = Categoria(
