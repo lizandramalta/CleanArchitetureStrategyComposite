@@ -10,7 +10,7 @@ public struct MockAPI {
     
     private init(){}
     
-    func query() -> Element {
+    func query() -> [Element] {
         return MockData
     }
 }
