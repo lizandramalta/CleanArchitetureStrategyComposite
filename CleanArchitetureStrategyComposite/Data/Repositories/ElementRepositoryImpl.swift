@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct ElementRepositoryImpl: ElementRepository {
+    func loadAll() -> [any Element] {
+        return MockAPI.shared.query()
+    }
+}
