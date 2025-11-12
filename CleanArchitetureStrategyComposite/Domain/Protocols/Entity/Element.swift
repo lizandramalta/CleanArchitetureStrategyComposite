@@ -8,10 +8,8 @@
 import Foundation
 
 protocol Element {
+    var id: UUID { get }
     var name: String { get }
-	var type: String { get }
     
     func execute()
-    
-    func executeSearch(name: String) -> Element?
 }

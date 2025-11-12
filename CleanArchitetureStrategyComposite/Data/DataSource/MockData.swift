@@ -9,7 +9,7 @@
 //BoraBora
 import Foundation
 
-let loja = Categoria(
+let dados = Categoria(
     id: UUID(uuidString: "bb196f64-bb90-4127-ad88-9c21d76f3fab")!,
     name: "Loja",
     subcategorias: [
