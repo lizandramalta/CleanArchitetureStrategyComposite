@@ -7,18 +7,39 @@
 
 import Foundation
 
-final class Category: Element {
+final class Category: GenericElement {
+	
     var id: UUID
     var name: String
-    var elements: [any Element]
+    var elements: [any GenericElement]
     
-    init(id: UUID = .init(), name: String, elements: [any Element]) {
+    init(id: UUID = .init(), name: String, elements: [any GenericElement]) {
         self.id = id
         self.name = name
         self.elements = elements
     }
     
-    func addElement(_ element: any Element) {
+    func addElement(_ element: any GenericElement) {
         elements.append(element)
     }
+	
+	func findProduct(by id: UUID) -> Product? {
+		for element in elements {
+			if let found = element.findProduct(by: id) {
+				return found
+			}
+		}
+		return nil
+	}
+	
+	func findParentCategory(of id: UUID, parent: Category?) -> Category? {
+		for element in elements {
+			if let product = element as? Product, product.id == id {
+				return parent
+			} else if let category = element as? Category {
+				return category.findParentCategory(of: id, parent: self)
+			}
+		}
+		return nil
+	}
 }

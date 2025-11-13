@@ -6,5 +6,5 @@
 //
 
 protocol CategoryRepository {
-	func loadAll() -> [Element]
+	func loadAll() throws -> [Category]
 }

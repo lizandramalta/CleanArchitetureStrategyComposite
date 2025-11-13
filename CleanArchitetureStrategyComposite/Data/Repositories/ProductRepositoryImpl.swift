@@ -4,16 +4,33 @@
 //
 //  Created by Ana Clara Ferreira Caldeira on 10/11/25.
 //
+
 import Foundation
 
-struct ProductRepositoryImpl: ProductRepository {
-	func getProductById(_ id: UUID) -> Product {
-		//
-	}
-	
-	func getCategoryByProductId(_ id: UUID) -> Category {
-		//
-	}
-	
-	
+enum RepositoryError: Error {
+	case productNotFound
+	case categoryNotFound
 }
+
+struct ProductRepositoryImpl: ProductRepository {
+	private var dataSource = MockAPI.shared.query()
+	
+	func getProductById(_ id: UUID) throws-> Product {
+		for element in dataSource {
+			if let found = element.findProduct(by: id){
+				return found
+			}
+		}
+		throw RepositoryError.productNotFound
+	}
+	
+	func getCategoryByProductId(_ id: UUID) throws -> Category {
+		for element in dataSource {
+			if let found = element.findParentCategory(of: id, parent: nil as Category?) {
+				return found
+			}
+		}
+		throw RepositoryError.categoryNotFound
+	}
+}
+

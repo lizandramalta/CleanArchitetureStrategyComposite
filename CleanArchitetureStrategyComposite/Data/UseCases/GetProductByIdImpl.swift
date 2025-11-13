@@ -13,8 +13,8 @@ class GetProductByIdImpl: GetProductById {
         self.repository = repository
     }
     
-	func execute(_ id: UUID) -> Product {
-        return repository.getProductById(id)
+	func execute(_ id: UUID) throws -> Product {
+        return try repository.getProductById(id)
 	}
 	
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-let MockData: [Element] = [Category(
+let MockData: [GenericElement] = [Category(
     id: UUID(uuidString: "A0E3B58B-5F96-4B96-9D7C-9F6F4B8A0C11")!,
     name: "Loja",
     elements: [

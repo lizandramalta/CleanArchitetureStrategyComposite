@@ -7,11 +7,12 @@
 
 import Foundation
 
-final class Product: Element {
+final class Product: GenericElement {
+	
     var id: UUID
     var name: String
     var price: Double
-    var elements: [any Element]
+    var elements: [any GenericElement]
     
     init(id: UUID = .init(), name: String, price: Double) {
         self.id = id
@@ -20,7 +21,15 @@ final class Product: Element {
         self.elements = []
     }
     
-    func addElement(_ element: any Element) {
+    func addElement(_ element: any GenericElement) {
         elements.append(element)
     }
+	
+	func findProduct(by id: UUID) -> Product? {
+		return self.id == id ? self : nil
+	}
+	
+	func findParentCategory(of id: UUID, parent: Category?) -> Category? {
+		return nil
+	}
 }

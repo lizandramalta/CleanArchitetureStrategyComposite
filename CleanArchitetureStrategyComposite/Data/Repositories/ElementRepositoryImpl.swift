@@ -8,7 +8,7 @@
 import Foundation
 
 struct ElementRepositoryImpl: ElementRepository {
-    func loadAll() -> [any Element] {
+    func loadAll() -> [any GenericElement] {
         return MockAPI.shared.query()
     }
 }

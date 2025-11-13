@@ -8,5 +8,5 @@
 import Foundation
 
 protocol GetCategoryByProductId {
-	func execute(_ id: UUID) -> Category
+	func execute(_ id: UUID) throws -> Category
 }

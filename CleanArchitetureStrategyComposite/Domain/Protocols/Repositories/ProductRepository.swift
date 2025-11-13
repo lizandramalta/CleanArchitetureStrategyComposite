@@ -7,6 +7,6 @@
 import Foundation
 
 protocol ProductRepository {
-	func getProductById(_ id: UUID) -> Product
-	func getCategoryByProductId(_ id: UUID) -> Category
+	func getProductById(_ id: UUID) throws -> Product
+	func getCategoryByProductId(_ id: UUID) throws -> Category
 }

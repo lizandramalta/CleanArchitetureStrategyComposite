@@ -12,9 +12,8 @@ class FetchAllProductsAndCategoriesImpl: FetchAllProductsAndCategories {
         self.repository = repository
     }
     
-    
-	func execute() -> [any Element] {
-        return repository.loadAll()
+	func execute() throws -> [any GenericElement] {
+        return try repository.loadAll()
 	}
 	
 }
