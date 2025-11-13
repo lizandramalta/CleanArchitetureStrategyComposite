@@ -7,8 +7,11 @@
 
 import Foundation
 
-protocol GenericElement: AnyObject {
-    func addElement(_ element: GenericElement) -> Void
+protocol GenericElement: AnyObject,Identifiable {
+    var id: UUID { get }
+    var name: String { get }
+    
+    func addElement(_ element: any GenericElement) -> Void
 	func findProduct(by id: UUID) -> Product?
 	func findParentCategory(of id: UUID, parent: Category?) -> Category?
 }

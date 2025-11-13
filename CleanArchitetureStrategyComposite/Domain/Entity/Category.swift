@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Category: GenericElement {
+final class Category: GenericElement, Identifiable {
 	
     var id: UUID
     var name: String
