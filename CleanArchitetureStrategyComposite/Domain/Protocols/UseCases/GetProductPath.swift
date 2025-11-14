@@ -7,20 +7,15 @@
 
 import Foundation
 
-<<<<<<< HEAD:CleanArchitetureStrategyComposite/Domain/Protocols/UseCases/GetCategoryByProductId.swift
-class GetCategoryByProductId {
+class GetProductPath {
 	
-    private let repository: ProductRepository
-    
-    init(repository: ProductRepository) {
-        self.repository = repository
-    }
-    
-	func execute(_ id: UUID) throws -> Category {
-		return try repository.getCategoryByProductId(id)
+	private let repository: ProductRepository
+	
+	init(repository: ProductRepository) {
+		self.repository = repository
 	}
-=======
-protocol GetProductPath {
-	func execute(_ id: UUID) throws -> [Category]
->>>>>>> productPath:CleanArchitetureStrategyComposite/Domain/Protocols/UseCases/GetProductPath.swift
+	
+	func execute(_ id: UUID) throws -> [Category] {
+		return try repository.getProductPath(id)
+	}
 }
