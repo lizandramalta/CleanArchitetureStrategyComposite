@@ -6,7 +6,7 @@
 //
 
 
-class PayProductImpl: PayProduct {
+final class PayProductImpl: PayProduct {
     private var strategy: PaymentStrategy
 
     init(strategy: PaymentStrategy) {

@@ -29,7 +29,8 @@ final class Product: GenericElement {
 		return self.id == id ? self : nil
 	}
 	
-	func findParentCategory(of id: UUID, parent: Category?) -> Category? {
-		return nil
+	func findCategoryPath(to id: UUID, currentPath: [Category]) -> [Category]? {
+		return self.id == id ? currentPath : []
 	}
+	
 }

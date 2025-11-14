@@ -5,7 +5,7 @@
 //  Created by Ana Clara Ferreira Caldeira on 10/11/25.
 //
 
-class FetchAllProductsAndCategoriesImpl: FetchAllProductsAndCategories {
+final class FetchAllProductsAndCategoriesImpl: FetchAllProductsAndCategories {
     private let repository: CategoryRepository
     
     init(repository: CategoryRepository) {

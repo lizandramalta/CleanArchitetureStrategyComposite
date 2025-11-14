@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GetCategoryByProductIdImpl: GetCategoryByProductId {
+final class GetProductPathImpl: GetProductPath {
 	
     private let repository: ProductRepository
     
@@ -15,7 +15,7 @@ class GetCategoryByProductIdImpl: GetCategoryByProductId {
         self.repository = repository
     }
     
-	func execute(_ id: UUID) throws -> Category {
-		return try repository.getCategoryByProductId(id)
+	func execute(_ id: UUID) throws -> [Category] {
+		return try repository.getProductPath(id)
 	}
 }

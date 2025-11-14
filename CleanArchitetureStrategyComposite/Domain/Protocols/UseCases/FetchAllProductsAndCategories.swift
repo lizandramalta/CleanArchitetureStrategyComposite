@@ -6,5 +6,5 @@
 //
 
 protocol FetchAllProductsAndCategories {
-    func execute() throws -> [GenericElement]
+    func execute() throws -> [any GenericElement]
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ElementRepository {
-    func loadAll() -> [GenericElement]
+    func loadAll() -> [any GenericElement]
 }

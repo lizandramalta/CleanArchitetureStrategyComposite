@@ -6,7 +6,7 @@
 //
 import Foundation
 
-class GetProductByIdImpl: GetProductById {
+final class GetProductByIdImpl: GetProductById {
     private let repository: ProductRepository
     
     init(repository: ProductRepository) {
