@@ -6,6 +6,8 @@
 //
 
 class PixStrategy: PaymentStrategy {
+    var name = "Pix"
+    
     func processPayment(price: Double) {
         print("Pagamento de \(price) via pix")
     }

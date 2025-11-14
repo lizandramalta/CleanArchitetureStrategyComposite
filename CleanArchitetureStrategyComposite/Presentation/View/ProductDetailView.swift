@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ProductDetailView: View {
     @State private var vm: ProductDetailViewModel
+    @State private var showSheet = false
+    @State private var selectedOption: String = ""
+    @State private var payed = false
     let id: UUID
+    var paymentContext = PaymentContext()
+    let paymentOptions: [String] = ["Cartão de Débito", "Cartão de Crédito", "Pix"]
     
     init(id: UUID) {
         self.id = id
@@ -46,6 +51,11 @@ struct ProductDetailView: View {
                     .fontWeight(.bold)
                     .foregroundStyle(.primary)
                 
+                Button("Comprar") {
+                    showSheet = true
+                }
+                .buttonStyle(BorderedButtonStyle())
+                
                 Spacer()
             } else if vm.isLoading {
                 ProgressView("Carregando...")
@@ -54,11 +64,57 @@ struct ProductDetailView: View {
                     .foregroundStyle(.secondary)
             }
         }
+        .padding(16)
+        .navigationTitle("Produto")
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             vm.fetchInfo(id: id)
         }
-        .padding()
-        .navigationTitle("Produto")
-        .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showSheet, content: {
+            if !payed {
+                Form {
+                    Picker("Escolha uma forma de Pagamento", selection: $selectedOption) {
+                        ForEach(paymentOptions, id: \.self) { option in
+                            Text(option)
+                        }
+                    }
+                    .pickerStyle(.inline)
+                    Section {
+                        Button("Pagar") {
+                            switch selectedOption {
+                            case "Cartão de Débito":
+                                paymentContext.setStrategy(DebitStrategy())
+                            case "Cartão de Crédito":
+                                paymentContext.setStrategy(CreditStrategy())
+                            case "Pix":
+                                paymentContext.setStrategy(PixStrategy())
+                            default:
+                                break
+                            }
+                            payed = paymentContext.pay(amount: 100)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    }
+                }
+                .presentationDetents([.height(250)])
+                .presentationDragIndicator(.hidden)
+            }
+            else {
+                Image(systemName: "checkmark.circle")
+                    .font(.system(size: 100))
+                    .foregroundStyle(.green)
+                    .presentationDetents([.height(250)])
+                Text("Compra Concluida!")
+                    .font(.title)
+            }
+        })
+        .padding(32)
+        .presentationDetents([.height(250)])
+        .presentationDragIndicator(.visible)
     }
+}
+
+
+#Preview(){
+    ProductDetailView(id: UUID())
 }

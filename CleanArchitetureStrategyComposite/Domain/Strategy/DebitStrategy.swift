@@ -6,6 +6,8 @@
 //
 
 class DebitStrategy: PaymentStrategy {
+    var name = "Cartão de Débito"
+    
     func processPayment(price: Double) {
         print("Pagamento de \(price) com cartão de débito")
     }
