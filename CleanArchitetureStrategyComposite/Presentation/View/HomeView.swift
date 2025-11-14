@@ -13,20 +13,18 @@ struct HomeView: View {
     var body: some View {
         List {
             if !vm.elements.isEmpty {
-                Section("Categorias") {
-                    ForEach(vm.elements, id: \.id) { element in
-                        if let subcategory = element as? Category {
-                            NavigationLink(
-                                destination: CategoryListView(category: subcategory)
-                            ) {
-                                HStack {
-                                    Image(systemName: "folder")
-                                        .foregroundStyle(.blue)
-                                    Text(subcategory.name)
-                                    Spacer()
-                                }
-                                .padding(.vertical, 4)
+                ForEach(vm.elements, id: \.id) { element in
+                    if let subcategory = element as? Category {
+                        NavigationLink(
+                            destination: CategoryListView(category: subcategory)
+                        ) {
+                            HStack {
+                                Image(systemName: "folder")
+                                    .foregroundStyle(.blue)
+                                Text(subcategory.name)
+                                Spacer()
                             }
+                            .padding(.vertical, 4)
                         }
                     }
                 }

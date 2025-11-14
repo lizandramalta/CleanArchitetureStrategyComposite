@@ -9,7 +9,7 @@ import Foundation
 
 let MockData: [GenericElement] = [Category(
     id: UUID(uuidString: "A0E3B58B-5F96-4B96-9D7C-9F6F4B8A0C11")!,
-    name: "Loja",
+    name: "Todas categorias",
     elements: [
         Category(
             id: UUID(uuidString: "9B0C9B7E-6F60-49F0-8F3A-4D4C1FF1EF10")!,

@@ -1,10 +1,19 @@
 //
-//  FetchAllProductsAndCategories.swift
+//  FetchAllProductsAndCategoriesImpl.swift
 //  CleanArchitetureStrategyComposite
 //
-//  Created by Lizandra Malta on 10/11/25.
+//  Created by Ana Clara Ferreira Caldeira on 10/11/25.
 //
 
-protocol FetchAllProductsAndCategories {
-    func execute() throws -> [GenericElement]
+class FetchAllProductsAndCategories {
+    private let repository: CategoryRepository
+    
+    init(repository: CategoryRepository) {
+        self.repository = repository
+    }
+    
+	func execute() throws -> [any GenericElement] {
+        return try repository.loadAll()
+	}
+	
 }

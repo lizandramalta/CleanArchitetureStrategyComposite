@@ -14,8 +14,8 @@ struct ProductDetailView: View {
     init(id: UUID) {
         self.id = id
         let productRepository = ProductRepositoryImpl()
-        let getProductById = GetProductByIdImpl(repository: productRepository)
-        let getCategoryByProductId = GetCategoryByProductIdImpl(repository: productRepository)
+        let getProductById = GetProductById(repository: productRepository)
+        let getCategoryByProductId = GetCategoryByProductId(repository: productRepository)
         _vm = State(initialValue: ProductDetailViewModel(getProductByIdUseCase: getProductById, getCategoryByProductIdUseCase: getCategoryByProductId))
     }
     

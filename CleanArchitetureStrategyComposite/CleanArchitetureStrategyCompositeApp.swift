@@ -18,7 +18,7 @@ struct CleanArchitetureStrategyCompositeApp: App {
         let categoryRepository = CategoryRepositoryImpl()
         self.categoryRepository = categoryRepository
         
-        let fetchAll = FetchAllProductsAndCategoriesImpl(repository: categoryRepository)
+        let fetchAll = FetchAllProductsAndCategories(repository: categoryRepository)
         self.fetchAllProductsAndCategories = fetchAll
         
         _homeVM = State(initialValue: HomeViewModel(fetchCategoriesUseCase: fetchAll))
