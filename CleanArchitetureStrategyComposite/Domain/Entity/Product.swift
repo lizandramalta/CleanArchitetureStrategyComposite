@@ -30,7 +30,7 @@ final class Product: GenericElement {
 	}
 	
 	func findCategoryPath(to id: UUID, currentPath: [Category]) -> [Category]? {
-		return self.id == id ? currentPath : []
+		return self.id == id ? currentPath : nil
 	}
 	
 }

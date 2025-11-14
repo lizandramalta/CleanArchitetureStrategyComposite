@@ -66,7 +66,3 @@ struct ProductDetailView: View {
     }
 }
 
-#Preview {
-	let id = UUID(uuidString: "c9af8bd7-548d-4f58-8348-c47e0db67c84")!
-	ProductDetailView(id: id)
-}

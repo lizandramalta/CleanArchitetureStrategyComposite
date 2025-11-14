@@ -40,6 +40,7 @@ final class Category: GenericElement, Identifiable {
 				return result
 			}
 		}
+		
 		return nil
 	}
 }

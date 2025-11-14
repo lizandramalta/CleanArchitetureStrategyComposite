@@ -30,10 +30,8 @@ final class ProductDetailViewModel {
 		
 		do {
 			product = try getProductByIdUseCase.execute(id)
-			
 			let path = try getProductPathUseCase.execute(id)
 			productPath = path
-			
 			productPathString = path.map { $0.name }.joined(separator: " > ")
 			
 		} catch {
