@@ -10,7 +10,7 @@ public struct MockAPI {
     
     private init(){}
     
-    func query() -> [GenericElement] {
+    func query() -> [any GenericElement] {
         return MockData
     }
 }

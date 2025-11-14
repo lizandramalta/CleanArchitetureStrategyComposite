@@ -32,14 +32,15 @@ final class Category: GenericElement, Identifiable {
 		return nil
 	}
 	
-	func findParentCategory(of id: UUID, parent: Category?) -> Category? {
+	func findCategoryPath(to productId: UUID, currentPath: [Category]) -> [Category]? {
+		let newPath = currentPath + [self]
+		
 		for element in elements {
-			if let product = element as? Product, product.id == id {
-				return parent
-			} else if let category = element as? Category {
-				return category.findParentCategory(of: id, parent: self)
+			if let result = element.findCategoryPath(to: productId, currentPath: newPath) {
+				return result
 			}
 		}
+		
 		return nil
 	}
 }

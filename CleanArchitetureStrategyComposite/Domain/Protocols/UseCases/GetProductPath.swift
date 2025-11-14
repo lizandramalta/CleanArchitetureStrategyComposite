@@ -7,6 +7,7 @@
 
 import Foundation
 
+<<<<<<< HEAD:CleanArchitetureStrategyComposite/Domain/Protocols/UseCases/GetCategoryByProductId.swift
 class GetCategoryByProductId {
 	
     private let repository: ProductRepository
@@ -18,4 +19,8 @@ class GetCategoryByProductId {
 	func execute(_ id: UUID) throws -> Category {
 		return try repository.getCategoryByProductId(id)
 	}
+=======
+protocol GetProductPath {
+	func execute(_ id: UUID) throws -> [Category]
+>>>>>>> productPath:CleanArchitetureStrategyComposite/Domain/Protocols/UseCases/GetProductPath.swift
 }

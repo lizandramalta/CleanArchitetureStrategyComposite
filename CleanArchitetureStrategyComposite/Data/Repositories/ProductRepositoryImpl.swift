@@ -13,6 +13,7 @@ enum RepositoryError: Error {
 }
 
 struct ProductRepositoryImpl: ProductRepository {
+	
 	private var dataSource = MockAPI.shared.query()
 	
 	func getProductById(_ id: UUID) throws-> Product {
@@ -24,10 +25,10 @@ struct ProductRepositoryImpl: ProductRepository {
 		throw RepositoryError.productNotFound
 	}
 	
-	func getCategoryByProductId(_ id: UUID) throws -> Category {
+	func getProductPath(_ id: UUID) throws -> [Category] {
 		for element in dataSource {
-			if let found = element.findParentCategory(of: id, parent: nil as Category?) {
-				return found
+			if let categoryPath = element.findCategoryPath(to: id, currentPath: []){
+				return categoryPath
 			}
 		}
 		throw RepositoryError.categoryNotFound

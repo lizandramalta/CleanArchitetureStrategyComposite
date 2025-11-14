@@ -13,5 +13,5 @@ protocol GenericElement: AnyObject {
     
     func addElement(_ element: GenericElement) -> Void
 	func findProduct(by id: UUID) -> Product?
-	func findParentCategory(of id: UUID, parent: Category?) -> Category?
+	func findCategoryPath(to id: UUID, currentPath: [Category]) -> [Category]?
 }

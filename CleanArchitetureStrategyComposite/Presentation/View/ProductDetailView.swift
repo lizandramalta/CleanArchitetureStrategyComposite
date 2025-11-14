@@ -19,9 +19,14 @@ struct ProductDetailView: View {
     init(id: UUID) {
         self.id = id
         let productRepository = ProductRepositoryImpl()
-        let getProductById = GetProductById(repository: productRepository)
-        let getCategoryByProductId = GetCategoryByProductId(repository: productRepository)
-        _vm = State(initialValue: ProductDetailViewModel(getProductByIdUseCase: getProductById, getCategoryByProductIdUseCase: getCategoryByProductId))
+        let getProductById = GetProductByIdImpl(repository: productRepository)
+        let getProductPath = GetProductPathImpl(repository: productRepository)
+		_vm = State(
+			initialValue: ProductDetailViewModel(
+				getProductByIdUseCase: getProductById,
+				getProductPathUseCase: getProductPath
+			)
+		)
     }
     
     
@@ -38,12 +43,10 @@ struct ProductDetailView: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                     
-                    if let category = vm.productCategory {
-                        Text(category.name)
-                            .font(.title3)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                    }
+					Text(vm.productPathString)
+						.font(.title3)
+						.fontWeight(.light)
+						.multilineTextAlignment(.center)
                 }
                 
                 Text(product.price, format: .currency(code: "BRL"))
@@ -114,7 +117,3 @@ struct ProductDetailView: View {
     }
 }
 
-
-#Preview(){
-    ProductDetailView(id: UUID())
-}
